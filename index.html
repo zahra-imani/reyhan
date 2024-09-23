@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقدیم به ریحانه جونم</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: rgb(62, 30, 242);
+	background: linear-gradient(
+		315deg,
+		rgba(62, 30, 242, 1) 0%,
+		rgba(174, 128, 214, 1) 100%
+	);
+            font-family: "https://fonts.google.com/share?selection.family=Vazirmatn:wght@100..900";
+        }
+        .music-player {
+            text-align: center;
+            background: #1f1f1f;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 , h3{
+          color: #f0f0f0;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+        }
+        audio {
+            margin-top: 20px;
+        }
+      
+    </style>
+</head>
+<body>
+
+<div class="music-player">
+    <img src="img1.png" alt="Music Cover">
+    <h2>آهنگ برای ریحانه جونمون </h2>
+    <h3>از طرف هانیه - بوچ</h3>
+    <audio id="audio" src="music1.mp3" onclick="playMusic()"" controls>
+    </audio>
+   
+</div>
+
+<script>
+    function playMusic() {
+        const audio = document.getElementById('audio');
+        audio.play();
+    }
+</script>
+
+</body>
+</html>
